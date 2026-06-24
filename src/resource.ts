@@ -321,7 +321,7 @@ export async function SmokeTestStaticSiteDeploy(env: Env): Promise<{ ok: true; s
 
   return { ok: true, scriptName };
 }
-xport async function CheckCloudflareApiConfiguration(env: Env): Promise<Record<string, unknown>> {
+export async function CheckCloudflareApiConfiguration(env: Env): Promise<Record<string, unknown>> {
   const tokenConfigured = Boolean(env.DISPATCH_NAMESPACE_API_TOKEN);
   const accountIdConfigured = Boolean(env.ACCOUNT_ID);
   const namespaceConfigured = Boolean(env.DISPATCH_NAMESPACE_NAME);
